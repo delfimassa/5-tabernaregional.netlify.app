@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <div><img src="img/header/bannerperu.jpg" class="w-100" alt="Imagen de Machu Pichu"></div>
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="comidaperuana.html">Comida Peruana</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <section class="container my-3 justify-content-center">
+        <article class="p-3">
+            <h3><u>Gastronimía Peruana</u></h3>
+            <p>La gastronomía del Perú es una de las más variadas y exquisitas del mundo. Es el resultado de la fusión
+                inicial de la tradición culinaria del antiguo Perú —con sus propias técnicas y potajes— con la cocina
+                española en su variante más fuertemente influenciada por 762 años de presencia morisca en la Península
+                Ibérica y con importante aporte de las costumbres culinarias traídas de la costa atlántica del África
+                subsahariana por los esclavos.
+
+                Posteriormente, este mestizaje se vio influenciado por los usos y costumbres culinarios de los chefs
+                franceses que huyeron de la revolución en su país para radicarse, en buen número, en la capital del
+                virreinato del Perú. Igualmente trascendental fue la influencia de las inmigraciones del siglo XIX, que
+                incluyó chinos-cantoneses, japoneses e italianos,​ entre otros orígenes principalmente europeos.
+
+                Como particularidad exclusiva de la gastronomía del Perú, existen comidas y sabores de cuatro
+                continentes en un solo país.</p>
+            <hr>
+        </article>
+    </section>
+    <section class="card shadow container my-3">
+        <div class="row justify-content-center">
+            <!-- COLUMNA GRANDE -->
+            <div class="col-sm-12 col-md-9 col-lg-7 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">Ceviche Peruano. Recetas del clásico indiscutible de la cocina peruana</h4>
+                    <p class="m-3">Los productos frescos y la pesca del día son la clave de esta comida estrella de la
+                        cocina peruana. Consta de
+                        carne marinada, pescado o mariscos -o ambos- combinados con cilantro picado,
+                        jugo de limón, cebolla morada, y leche de tigre como sus principales
+                        ingredientes para su cocción.</p>
+                    <div class="p-3"><img class="img-fluid" src="img/CEVICHE!!!.PNG" alt="ceviche"></div>
+                    <h5 class="m-3">Ceviche clásico por Agustín Lucero, chef de Komyūn</h5>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul>
+                                <p><strong>Ingredientes para la leche de tigre</strong></p>
+                                <li>300 g de jugo de lima</li>
+                                <li>40 g de cebolla blanca</li>
+                                <li>3 g de jengibre</li>
+                                <li>50 g de caldo de vegetales</li>
+                                <li>1 g de hondashi</li>
+                                <li>5 g de cilantro</li>
+                                <li>80 g de apio</li>
+                                <li>5 g de sal fina</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p><strong>Ingredientes para el ceviche</strong></p>
+                            <ul>
+                                <li>Cilantro c/n</li>
+                                <li>Ají limo c/n</li>
+                                <li>25 g de jugo de lima</li>
+                                <li>60 g de cebolla morada</li>
+                                <li>20 g maíz cancha</li>
+                                <li>350 g lenguado limpio</li>
+                                <li>150 g leche de tigre</li>
+                                <li>Sal c/n</li>
+                                <li>Pimienta negra molida c/n</li>
+                                <li>Batata naranja</li>
+                                <li>Un par de hojas de lechuga</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="m-3"><strong>Procedimiento</strong></p>
+                    <p class="m-3"> Cortar el pescado en cubos de 1 cm x 1cm. Hervir la/las batatas en agua hasta que se
+                        ablanden bien y luego cortar en rodajas. Fritar los granos de maiz cancha de manera que se doren
+                        y tornen crocantes.
+                        Para la leche de tigre, poner todos los ingredientes en licuadora y licuar por 2 minutos.
+                        Mezclar con el
+                        pescado. Reservar. El ácido de la leche de tigre cocinará el pescado mientras tanto.
+                        En el plato donde se presenta el ceviche, poner debajo una hoja de lechuga y la cebolla morada y
+                        batata encima.
+                        Mezclar el resto de los ingredientes y decorar con cilantro, ají, lima y el maíz cancha.</p>
+                    <div class="p-3"><img class="img-fluid" src="img/cevicheenero.PNG" alt="ceviche"></div>
+                    <hr>
+                    <h4 class="m-3">Chifles (chips de plátano verde)</h4>
+                    <div class="p-3"><img class="img-fluid" src="img/chifles2.jpg" alt="chifles o platanos fritos">
+                    </div>
+                    <p class="m-3">
+                        Los chifles son chips de plátano verde. También se conocen como platanitos, platanutres, o
+                        mariquitas en otros países latinos. Los chifles son un excelente acompañante para sopas,
+                        ceviches y cervezas. Para hacerlos solo necesitas: plátanos verdes o guineos verdes, aceite para
+                        freír
+                        y sal al gusto.
+                    </p>
+                    <p class="m-3"><strong>Procedimiento</strong></p>
+                    <p class="m-3">Pele los plátanos verdes o guineos verdes, tenga cuidado para evitar mancharse la
+                        ropa o la tabla
+                        de picar. Los plátanos verdes son más fáciles de pelar que los guineos verdes. Los guineos
+                        verdes también son más gomosos o pegajosos, y esa goma es la que mancha, lo mejor es pelarlos en
+                        una fuente de agua fría.
+                        Corte los plátanos en tajadas largas o en rodajas finas. Una mandolina de cocina es una
+                        excelente herramienta para que queden bien finas.
+
+                        Caliente el aceite, ya sea en una olla profunda o en un freidor, hasta que la temperatura este
+                        entre 375 F- 400 F. Use suficiente aceite para que las rodajas de plátano o guineo este
+                        completamente cubiertas a la hora de freír.
+                        Agregue las tajadas o rodajas de plátano al aceite caliente, tenga cuidado de no freír
+                        demasiados a la misma vez para evitar que se peguen.
+                        Fríalos hasta que empiecen a dorarse.
+                        Saque los chifles del aceite y póngalos en toallas de papel para escurrir la grasa.
+                        Espolvoree con sal al gusto. Se pueden servir calientes o fríos.</p>
+                </article>
+            </div>
+            <!-- COLUMNA CHICA -->
+            <div class="col-sm-12 col-md-9 col-lg-3 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">El top 5 de los mejores restaurantes en Cusco</h4>
+                    <p class="p-3">La gastronomía en Perú se encuentra fuertemente arraigada en cada uno de sus
+                        habitantes y es por esto que, a diferencia de otros lugares, en Perú no importa dónde te sientes
+                        a comer, en un ranchito o un restaurant, siempre comerás bien.
+                        Habiendo dicho esto, también es cierto que a veces cuando uno viaja, quiere darse un respiro de
+                        la ajetreada rutina de excursiones. Si tu forma de hacerlo es cerrar el día en un lindo
+                        restaurant, aquí va nuestro top 5 de Cusco.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://www.cuscorestaurants.com/restaurant/limo/" target="_blank">
+                                <h5>LIMO Cocina Peruana & Pisco Bar</h5>
+                            </a>
+                            <p>La experiencia LIMO, desde su tradicional balcón con vista a la Plaza de Armas, es
+                                un viaje a través de la cocina peruana-nikkei y ofrece una barra de tragos sorprendente.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/kusikuyrestaurante/" target="_blank">
+                                <h5>Kusikuy Restaurante</h5>
+                            </a>
+                            <p>Si de probar el famoso Cuy se trata, Kusikuy es el lugar indicado! Bien ubicado y
+                                "child-friendly", este lugar los recibirá con el agasajo correspondiente tras sus
+                                largas horas de paseo en el efórico ritmo del Cusco.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/dir//lista+top+5+restaurantes+de+comida+peruana+en+cusco/@-20.1147438,-72.4717279,6z/data=!4m8!4m7!1m0!1m5!1m1!1s0x916dd60cc29b29e5:0x7602023a21873820!2m2!1d-71.9746542!2d-13.5152229"
+                                target="_blank">
+                                <h5>Pachapapa</h5>
+                            </a>
+                            <p>Rústico, campestre y ubicado en una casona antigua del tradicional barrio de San Blas o
+                                T’oqokachi – frente a la Iglesia de San Blas, la parroquia más antigua de la ciudad del
+                                Cusco. Cocina cusqueña y más, en un ambiente de culto a la localidad, sus costumbres, su
+                                mística y su arte, que a través de la artesanía ancestral y la culinaria, hoy brillan en
+                                el mundo entero.</p>
+                        </li>
+                        <li>
+                            <a href="http://www.nunaraymicusco.com/" target="_blank">
+                                <h5>Nuna Raymi</h5>
+                            </a>
+                            <p> Su filosofía es trabajar con los productores locales y empresas lideradas
+                                por jóvenes emprendedores como ellos. Tienen un compromiso activo con nuestra
+                                comunidad, apoyando fundaciones y actividades sociales de la zona. Su
+                                producción es diaria y cada plato es elaborado al momento para así garantizar calidad.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/dir//lista+top+5+restaurantes+de+comida+peruana+en+cusco/@-20.117045,-72.47231,6z/data=!4m8!4m7!1m0!1m5!1m1!1s0x916dd60b28651373:0x5a7a138cd35f64ee!2m2!1d-71.9749207!2d-13.5199728"
+                                target="_blank">
+                                <h5>Casa Qorikancha</h5>
+                            </a>
+                            <p>La belleza arquitectónica de nuestra cultura se une magicamente con la riqueza de nuestra
+                                gastronomía. El resultado la armonía perfecta del color y sabor.</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-4 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 col-md-4 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

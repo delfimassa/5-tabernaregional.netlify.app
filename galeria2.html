@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill active" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="galeria2.html">Galería, pág. 2</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <!-- INICIO GALERIA2 -->
+    <!-- Comienza Seccion MEXICO -->
+    <section class="container rounded">
+        <div id="caja">
+            <h1 class="text-center display-6 py-4">Delicias Mexicanas <img src="/img/flags/Mexico.png" alt="Mexico"
+                    width="50rem"></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Aguadito.jpg" class="card-img-top" alt="Aguadito">
+                    <div class="card-body">
+                        <h5 class="card-title">Aguadito</h5>
+                        <p class="card-text">Caldo hervido de camarones frescos, chile chiltepines y una variedad de
+                            vegetales al gusto, que incluso pueden llevar una pizca de tequila o mezcal para agregarle
+                            sabor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Chilaquies.jpg" class="card-img-top" alt="Chilaquíes">
+                    <div class="card-body">
+                        <h5 class="card-title">Chilaquíes</h5>
+                        <p class="card-text">Tortillas asadas de maíz o de trigo, rellenas con carne o pollo y con una
+                            variedad de vegetales salteados en los que suele destacar el pimiento rojo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Elotes.jpg" class="card-img-top" alt="Elotes">
+                    <div class="card-body">
+                        <h5 class="card-title">Elotes</h5>
+                        <p class="card-text">Consiste en una gruesa tortilla de maíz, chata y alargada, sobre la que se
+                            sirve carne de res o puerco, chile, frijoles, queso y vegetales. Se sirve al frio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Enchiladas.jpg" class="card-img-top" alt="Enchiladas">
+                    <div class="card-body">
+                        <h5 class="card-title">Enchiladas</h5>
+                        <p class="card-text">Rellenas con frijoles, lechuga, jalapeño y tomate, mientras que otras
+                            incluyen carne de res con papa y zanahoria, acompañada con la famosa salsa poblana.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Mole.jpg" class="card-img-top" alt="Mole">
+                    <div class="card-body">
+                        <h5 class="card-title">Mole</h5>
+                        <p class="card-text">Es una deliciosa salsa elaborada a partir de chiles, masa de maíz, bolillo
+                            y especias varias, sirviéndose principalmente junto con carnes cocidas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Pozole.jpg" class="card-img-top" alt="Pozole">
+                    <div class="card-body">
+                        <h5 class="card-title">Pozole</h5>
+                        <p class="card-text">Carne de res, de puerco o de pollo con vegetales (aguacate, cebolla y
+                            chile), pero en todo momento se destaca por los granos de maíz tierno.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Quesadillas.jpg" class="card-img-top" alt="Quesadillas">
+                    <div class="card-body">
+                        <h5 class="card-title">Quesadillas</h5>
+                        <p class="card-text">Su preparación es rellenar una tortilla de maíz con queso y plegarla a la
+                            mitad, cocinándola a la plancha hasta que su interior se derrita.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Mexicana/Tacos.jpg" class="card-img-top" alt="Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title">Tacos</h5>
+                        <p class="card-text">Una o varias tortillas de maíz fritas, rellenadas con carne de res, pollo o
+                            pescado, aderezadas con granos, queso rallado y vegetales salteados en trozos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finaliza Seccion MEXICO -->
+        <!-- Comienza Seccion COLOMBIA  -->
+        <div id="caja">
+            <h1 class="display-6 text-center py-4">Delicias Colombianas <img src="/img/flags/Colombia.png"
+                    alt="Colombia" width="50rem"></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Aijaco.jpg" class="card-img-top" alt="Aijaco">
+                    <div class="card-body">
+                        <h5 class="card-title">Aijaco</h5>
+                        <p class="card-text">Esta sopa la encontrarán sobre todo en la zona central andina del país, en
+                            Bogotá y los alrededores. Sus ingredientes principales son el pollo, la papa criolla o papa
+                            amarilla, mazorca y arracacha.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Arepas.jpg" class="card-img-top" alt="Arepas">
+                    <div class="card-body">
+                        <h5 class="card-title">Arepas</h5>
+                        <p class="card-text">El ingrediente principal es el maíz en diferentes variedades. Se hace
+                            generalmente de maíz blanco y de maíz amarillo. Es un por ello no les extrañe encontrar
+                            decenas de tipos de arepas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Bandeja Paisa.jpg" class="card-img-top" alt="Bandeja_Paisa">
+                    <div class="card-body">
+                        <h5 class="card-title">Bandeja Paisa</h5>
+                        <p class="card-text">La característica principal del plato es la abundancia. Arroz blanco,
+                            Chicharrón, Huevo frito, Carne molida, Patacones, Chorizo, Morcilla, Aguacate, Arepa blanca,
+                            plátano maduro y frijol rojo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Patrasca.jpg" class="card-img-top" alt="Patarasca">
+                    <div class="card-body">
+                        <h5 class="card-title">Patarasca</h5>
+                        <p class="card-text">La patarasca es un plato a base de hojas de plátano y pescado. se prepara
+                            sazonando un pescado con un guiso de especias y vegetales del amazonas (pimientos, ají,
+                            cúrcuma).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Platano Relleno.jpg" class="card-img-top" alt="Platano_Relleno">
+                    <div class="card-body">
+                        <h5 class="card-title">Platano Relleno</h5>
+                        <p class="card-text">Los rellenos podrían variar entre diversos tipos de queso crema, arequipe,
+                            bocadillo y mantequilla. Para hornearlos se suelen envolver el papel aluminio y su
+                            preparación es bastante sencilla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Sancocho.jpg" class="card-img-top" alt="Sancocho">
+                    <div class="card-body">
+                        <h5 class="card-title">Sancocho</h5>
+                        <p class="card-text">Es una especie de sopa preparada con distintos tipos de carnes, verduras de
+                            todo tipo, condimentos. Se cree que evita la resaca y los malestares que pueda traer la
+                            ingesta de alcohol.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Tequeños.jpg" class="card-img-top" alt="Tequeños">
+                    <div class="card-body">
+                        <h5 class="card-title">Tequeños</h5>
+                        <p class="card-text">Los hay con cobertura de masa de maíz y de masa de plátano. El de queso
+                            llanero recubierto de una masa crujiente pero sedosa a base de harina de trigo, mantequilla
+                            y huevo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Colombiana/Bagre Salsa Patacones.jpg" class="card-img-top"
+                        alt="Bagre_Patacones">
+                    <div class="card-body">
+                        <h5 class="card-title">Bagre con Patacones</h5>
+                        <p class="card-text">El bagre es un pescado de agua dulce. Lo podrán encontrar en salsa a base
+                            de tomate, cebolla y pimentón; o frito. Se le suele acompañar de arroz con coco y patacones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finaliza Seccion COLOMBIA -->
+        <!-- Comienza Seccion NAVIGATION -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="error404" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="galeria.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="galeria2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="error404.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="error404.html">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- FIN GALERIA2 -->
+    <!-- FOOTER -->
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

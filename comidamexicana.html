@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <div><img src="img/header/mexico2.jpg" class="w-100" alt="Imagen de Mariachis"></div>
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="comidamexicana.html">Comida Mexicana</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <section class="container my-3 justify-content-center">
+        <article class="p-3">
+            <h3><u>Comida Mexicana</u></h3>
+            <p>La gastronomía de México tiene una gran diversidad de platos típicos, por ello fue reconocida, por la
+                UNESCO,
+                como Patrimonio Inmaterial de la Humanidad. Los ingredientes básicos y representativos de los platillos
+                mexicanos son: el maíz, el cilantro, el chile, el frijol, el piloncillo, el nopal y el jitomate. Los
+                platos mexicanos forman
+                parte de las tradiciones y vida común de sus habitantes. La cocina mexicana ha sido influida y ha
+                influido a su vez a cocinas de otras culturas, como la española, francesa, africana, del Oriente Medio y
+                asiática. Es testimonio de la cultura histórica del país, muchos platillos se originaron en el México
+                prehispánico y otros momentos importantes de su historia. Existe en ella una amplia gama de sabores,
+                colores, texturas e influencias que la convierten en un gran atractivo para nacionales y extranjeros:
+                México es famoso por su gastronomía.</p>
+            <hr>
+        </article>
+    </section>
+    <section class="card shadow container my-3">
+        <div class="row justify-content-center">
+            <!-- COLUMNA GRANDE -->
+            <div class="col-sm-12 col-md-9 col-lg-7 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">Tacos con salsa Guacamole</h4>
+                    <p class="m-3">Rellenos de pollo y vegetales, son una opción fácil y rica para compartir con amigos.
+                        Este plato típico mexicano se ganó un lugar dentro de la gastronomía de muchos
+                        países. Y lo bueno, es que puede combinarse con distintos ingredientes según el gusto de cada
+                        comensal.
+
+                        Esta receta es ideal para compartir y lo mejor es que es muy pero muy fácil.</p>
+                    <div class="p-3"><img class="img-fluid" src="img/tacosmex.jpg" alt="tacos mexicanos"></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul>
+                                <p><strong>Ingredientes para los tacos</strong></p>
+                                <li>6 tortillas de trigo o de maíz o rapiditas</li>
+                                <li>350g de carne picada de ternera o de pollo</li>
+                                <li>4 dientes de ajo</li>
+                                <li>500g de tomates</li>
+                                <li>medio morrón rojo, amarillo
+                                    y verde</li>
+                                <li>1 cebolla morada</li>
+                                <li>1 cebolla blanca</li>
+                                <li>sal, pimienta y aceite</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p><strong>Ingredientes para el Guacamole</strong></p>
+                            <ul>
+                                <li>5 ramas de Cilantro</li>
+                                <li>1 tomate mediano</li>
+                                <li>1 cebolla grande</li>
+                                <li>2 chiles jalapeños</li>
+                                <li>4 paltas medianas maduras</li>
+                                <li>jugo de 2 limones</li>
+                                <li>aceite de oliva</li>
+                                <li>Sal y pimienta</li>
+                                <li>3 dientes de ajo pelados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="m-3"><strong>Procedimiento</strong></p>
+                    <p class="m-3">Para comenzar con nuestros tacos mexicanos, picamos los ajos y los cocinamos a
+                        fuego muy suave durante 1 minuto.
+                        Añadimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego.
+                        Salpimentamos y cocinamos durante un rato. El tomate soltará agua, debe evaporarse toda y
+                        puede tartar un rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos
+                        constantemente, durante 5 minutos más, para que coja buen sabor.
+                        <br>
+                        Cuando se haya cocinado un poco el tomate, añadimos la carne picada que hayamos elegido.
+                        Echamos su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos
+                        removiendo todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho,
+                        cuanto más finos queden mejor. Así que mezclamos con el tomate y el ajo, mientras la
+                        desmenuzamos y cocinamos la carne.
+                        <br>
+                        Una vez se haya cocinado, ¡ya está lista! Calentamos una a una las tortillas por sus dos
+                        caras en una sartén a fuego medio. Después ponemos encima unas cucharadas de la carne,
+                        aderezamos con un poco de pico de gallo, las envolvemos dándole la forma característica de taco
+                        ¡Y ya está listo!. Opcionalmente puedes espolvorear también queso rallado por encima.
+
+                    </p>
+                    <h4 class="m-3">Guacamole</h4>
+                    <div class="p-3"><img class="img-fluid" src="img/GUACAMOLE.PNG" alt="guacamole"></div>
+                    <p class="m-3">Para el guacamole extraemos la cáscara y las semillas de las paltas (aguacates) y
+                        pisamos la pulpa. Picamos el cilantro, el tomate, el chile y la cebolla en
+                        cuadrados medianos y trituramos el ajo. Mezclamos los anteriores ingledientes con el jugo de
+                        limón, sal, aceite y pimienta y procesamos o licuamos.</p>
+                    <hr>
+                    <p class="m-3">
+                        ¡Y así de fácil y rápido tienes unos tacos mexicanos que están riquísimos! Puedes acompañarlos
+                        de una buena salsa guacamole u otra salsa mexicana a tu gusto. Por último, recalcar que los
+                        auténticos tacos se hacen con carne mechada que se ha dejado cocinar junto con el tomate durante
+                        más de dos horas. Pero esta es una versión rápida que también da muy buenos resultados. ¡Espero
+                        que te guste!</p>
+                </article>
+            </div>
+            <!-- COLUMNA CHICA -->
+            <div class="col-sm-12 col-md-9 col-lg-3 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">El top 5 de los mejores restaurantes en Ciudad de México</h4>
+                    <ul>
+                        <li>
+                            <a href="http://azul.rest/azul-historico/" target="_blank">
+                                <h5>Azul histórico</h5>
+                            </a>
+                            <p>Su chef es considerado como uno de los 24 top chefs de Latinoamérica y uno de los
+                                siete más importantes de México según la revista Día
+                                Siete de México.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.balcondelzocalo.com/en/" target="_blank">
+                                <h5>El Balcón del Zócalo</h5>
+                            </a>
+                            <p>Su chef, Pepe Salinas, ha desarrollado una oferta de temporada basada en la cocina
+                                mexicana contemporánea. Tiene la intención de combinar las técnicas culinarias reales
+                                con ingredientes tradicionales de diferentes partes de todo el país.</p>
+                        </li>
+                        <li>
+                            <a href="http://pujol.com.mx/" target="_blank">
+                                <h5>Pujol</h5>
+                            </a>
+                            <p>Enrique Olvera abrió Pujol en la ciudad de México en el 2000. Su cocina siempre está
+                                transformándose; abreva ideas de aquí y de allá, reinterpreta y evoluciona, pero tiene
+                                las raíces puestas en los ingredientes y las técnicas mexicanas de todos los tiempos.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://marthaortiz.mx/" target="_blank">
+                                <h5>Dulce Patria</h5>
+                            </a>
+                            <p>En la obra de Martha Ortiz Chapa confluyen
+                                la sensibilidad y el talento.
+
+                                Martha, su dueña, posee una visión sensible de la vida, a partir de la cual inventa
+                                nuevos
+                                universos. Investigadora y conocedora de la realidad social, posee un profundo amor por
+                                este país y su cultura. En su
+                                quehacer cotidiano ha sabido combinar ambas vertientes, la de la creación, y la de los
+                                sabores y
+                                las costumbres inscritas en las raíces mexicanas.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.chapulin.rest/" target="_blank">
+                                <h5>Chapulín</h5>
+                            </a>
+                            <p>Chapulín es un lugar en donde la palabra México cobra sentido, es un restaurante en donde
+                                podrás conocer la riqueza y tradición de la cocina mexicana a través de los diferentes
+                                olores, texturas y sabores de los platillos que prepara la Chef Josefina López
+                                Méndez y su equipo.</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-4 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 col-md-4 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

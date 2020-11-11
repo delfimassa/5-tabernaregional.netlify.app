@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill active" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="galeria.html">Galería</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <!-- INICIO GALERIA -->
+    <!-- Comienza Seccion ARGENTINA  -->
+    <section class="container">
+        <div id="caja">
+            <h1 class="rounded text-center display-6 py-4">Delicias Argentinas <img src="/img/flags/Argentina.png"
+                    alt="Argentina" width="50rem"></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Empanadas.jpg" class="card-img-top" alt="Empanadas">
+                    <div class="card-body">
+                        <h5 class="card-title">Empanadas</h5>
+                        <p class="card-text">Son trozos de masa rellenos con carne picada o cortada a mano, sazonada con
+                            comino y cebolla. También pueden hacerse con jamón y queso, verduras, pollo, maíz dulce, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Humita.jpg" class="card-img-top" alt="Humita">
+                    <div class="card-body">
+                        <h5 class="card-title">Humita</h5>
+                        <p class="card-text">Es una pasta de maíz, envuelta y cocida o tostada en las propias hojas
+                            (chala o panca) de una mazorca de maíz. En Argentina se prepara en dos tipos: a la olla y en
+                            chala.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Locro.jpg" class="card-img-top" alt="Locro">
+                    <div class="card-body">
+                        <h5 class="card-title">Locro</h5>
+                        <p class="card-text">Se trata de una especie de sopa espesa y abundante hecha de maíz, frijoles,
+                            patatas, calabaza y algún tipo de carne, condimentados con comino, laurel, ajo, perejil y
+                            otras hierbas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Provoleta.jpg" class="card-img-top" alt="Provoleta">
+                    <div class="card-body">
+                        <h5 class="card-title">Provoleta</h5>
+                        <p class="card-text">Se debe poner a la parrilla el queso provolone y dejarlo unos minutos para
+                            que tome una consistencia más blanda, añadir algunos condimentos como orégano, ajo, chili
+                            y perejil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Asado.jpg" class="card-img-top" alt="Asado">
+                    <div class="card-body">
+                        <h5 class="card-title">Asado</h5>
+                        <p class="card-text">Incluye diferentes tipos de cortes de carne que se asan en una parrilla a
+                            fuego lento. Ademas puedes encontrar chorizos, morcillas, chinchulines, matambre de vaca o
+                            de cerdo, costillas, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Zapallitos Rellenos.jpg" class="card-img-top" alt="Zapallitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapallitos Rellenos</h5>
+                        <p class="card-text">Incluyen los siguientes ingredientes: huevo, jamón cocido, migas de pan,
+                            queso rallado, cebolla, aceite de oliva y manteca. Se cocinan al horno, igual que las
+                            berenjenas rellenas. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Pollo al Disco.jpg" class="card-img-top" alt="Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollo al Disco</h5>
+                        <p class="card-text">Es un plato que se prepara en una olla grande, originariamente en discos de arado en desuso. Sus ingredientes principales
+                            son pollo, cebolla, zanahoria, maíz, arvejas, pimientos y vino blanco, entre otros ingredientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Argentina/Mila y Papas.jpg" class="card-img-top" alt="Milanesas">
+                    <div class="card-body">
+                        <h5 class="card-title">Milanesas</h5>
+                        <p class="card-text">La milanesa es un filete fino rebozado a base de huevo batido y pan
+                            rallado. Como se ve en la foto, suele acompañarse de unas rodajas de limón para servirse y
+                            acompañar de un buen vino.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finaliza Seccion ARGENTINA -->
+        <!-- Comienza Seccion PERU -->
+        <div id="caja">
+            <h1 class="rounded text-center display-6 py-4">Delicias Peruanas <img src="/img/flags/Peru1.png" alt="Peru"
+                    width="50rem"></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Aji de Gallina.jpg" class="card-img-top" alt="Aji_Gallina">
+                    <div class="card-body">
+                        <h5 class="card-title">Aji de Gallina</h5>
+                        <p class="card-text">Ají amarillo e ingredientes como pan de molde o galletas de soda, leche y
+                            pecanas. Al momento de servir se encuentran las aceitunas y las rodajas de huevo duro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Arroz con Pollo.jpg" class="card-img-top" alt="Arroz_con_Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Arroz con Pollo</h5>
+                        <p class="card-text">El color verde del arroz es el rasgo distintivo de este plato del Perú, que
+                            se prepara con culantro. También se prepara con pato. Normalmente se suele comer con Papa a
+                            la huancaína y salsa criolla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Causa Rellena.jpg" class="card-img-top" alt="Causa_Rellena">
+                    <div class="card-body">
+                        <h5 class="card-title">Causa Rellena</h5>
+                        <p class="card-text">Se disfruta frío. Consiste en un puré de patatas amarillas relleno: pollo,
+                            pescado o vegetales. Entre los ingredientes destacan: el aguacate o palta, un huevo
+                            sancochado y el ají amarillo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Chupe de Camarones.jpg" class="card-img-top" alt="Chupe_Camarones">
+                    <div class="card-body">
+                        <h5 class="card-title">Chupe de Camarones</h5>
+                        <p class="card-text">Para su preparación, es imprescindible usar camarones frescos. Destaca
+                            también el uso de huevo y algunos trozos de queso, tal y como puede verse en esta imagen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Jalea Mixta.jpg" class="card-img-top" alt="Jalea_Mixta">
+                    <div class="card-body">
+                        <h5 class="card-title">Jalea Mixta</h5>
+                        <p class="card-text">Consiste en cortar el pescado en largos trozos y secar al sol. Luego se
+                            cocen estos trozos de pescado a las brasas y se sirven con salsa de cebolla, jugo de limón y
+                            yucas sancochadas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Lomo Saltado.jpg" class="card-img-top" alt="Lomo_Saltado">
+                    <div class="card-body">
+                        <h5 class="card-title">Lomo Saltado</h5>
+                        <p class="card-text">Lleva salsa soya y se cocina en un wok, sin embargo, hay un saborcito
+                            criollo que lo hace diferente a cualquier comida 100% cantonesa. Este lomo va acompañado con
+                            papas fritas y arroz blanco.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Quinua Atamalada.jpg" class="card-img-top" alt="Quinua_atamalada">
+                    <div class="card-body">
+                        <h5 class="card-title">Quinua Atamalada</h5>
+                        <p class="card-text">La quinua es un alimento que ofrece muchos nutrientes, por lo que es muy
+                            recomendado para los niños en etapa de crecimiento, escolar y los deportistas. En el Perú se
+                            suele comer en guiso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div class="fondo card">
+                    <img src="/img/Comida Peruana/Rocoto Relleno.jpg" class="card-img-top" alt="Rocoto_Relleno">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocoto Relleno</h5>
+                        <p class="card-text">El Rocoto es un ají rellenado de carne molida, cebolla, aceitunas, queso
+                            fresco rallado y huevo duro, todo esto sofreído y sazonado con sal, comino y otros
+                            condimentos al gusto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finaliza Seccion PERU -->
+        <!-- Seccion PAGINATION  -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="galeria.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="galeria2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="error404.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="error404.html">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- FIN GALERIA -->
+
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email
+                    </p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

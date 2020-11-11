@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="login.html">Ingresar</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <!-- MODAL OLVIDASTE CONTRA-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Olvidaste tu contraseña?
+                        <br>
+                        <p class="text-secondary"> Ingresa tu correo y te enviaremos un link para recuperarla </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-container">
+                        <div class="form-group font-weight-bold p-2">
+                            <label for=" exampleInputEmail1">E-mail</label>
+                            <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu
+                                información
+                                con nadie.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block bg-success">Enviar</button>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL OLVIDASTE TU CONTRA -->
+    <!-- FORMULARIO LOG IN -->
+    <section class="container">
+        <div class="row">
+            <div class="text-center col-sm-12">
+                <h1 class="mt-5 mb-3">Ingresar</h1>
+                <hr><br>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <form class="jumbotron py-4 container shadow">
+                    <h5 class="my-3 font-weight-bold">Completa los campos para ingresar a tu cuenta</h5>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="juanperez@ejemplo.com" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" placeholder="" class="form-control" required>
+                    </div>
+                    <div class="custom-control custom-switch mb-2">
+                        <input type="checkbox" class="custom-control-input" id="customSwitches">
+                        <label class="custom-control-label" for="customSwitches">Mostrar caracteres</label>
+                    </div>
+                    <button class="btn btn-success" type="submit">Log In</button>
+                    <h5 class="my-3  font-weight-bold">O ingresar con: </h5>
+                    <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                            href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            target="_blank" class="text-light"><i
+                                class="mx-2 fab fa-google-plus"></i>Google</a></button>
+                    <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                            href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                            class="text-light"><i class="mx-2 fab fa-facebook"></i>Facebook</a>
+                    </button>
+                    <div class="mt-3 text-center">
+                        <a class="my-3" href="#exampleModal1" data-toggle="modal"
+                            data-target="#exampleModal1">¿Olvidaste tu contraseña?</a></div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img class="shadow rounded p-0 ïmg-fluid mt-4 container" src="img/acocinar.jpg"
+                    alt="Hombre cocinando receta de internet">
+            </div>
+        </div>
+    </section>
+    <!-- FIN LOG IN -->
+    <!-- FOOTER -->
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-4 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 col-md-4 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

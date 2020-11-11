@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taberna Regional</title>
+    <meta name="author" content="Delfina Massa, Patricio Fernandez, Juan Marcelo D’amichici, Diego Caucota">
+    <meta name="description" content="Proyecto final del primer sprint, Comida latina">
+    <meta name="keywords" content="comida latinoamericana, mexicana, peruana, argentina">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87592fa59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.gif" height="60px" width="60px" alt="logo de Taberna Regional">
+                    <b>Taberna Regional</b>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto ml-auto text-center">
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="nosotros.html">Nosotros</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="galeria.html">Galería</a>
+                        <a class="m-2 nav-item nav-link btn-grad rounded-pill" href="contacto.html">Contacto</a>
+                    </div>
+                    <!-- Botones -->
+                    <div class="m-2 d-flex flex-row justify-content-around">
+                        <a href="login.html"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Ingresar</a>
+                        <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-outline-light bg-secondary mr-1 border border-dark">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold p-2" id="exampleModalLabel">¿Primera vez por aqui?
+                        <br>
+                        <p class="text-secondary"> ¡Vamos! Regístrate ahora </p>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-container">
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">Apellido y nombre</label>
+                                <input type="text" placeholder="Maru Botana" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for=" exampleInputEmail1">E-mail</label>
+                                <input type="email" placeholder="nombre@ejemplo.com" class="form-control"
+                                    aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información
+                                    con nadie.
+                                </small>
+                            </div>
+                            <div class="form-group font-weight-bold p-2">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <small id="emailHelp" class="form-text text-muted">Aqui va la contraseña.
+                                </small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por
+                                    e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block bg-success">Crear cuenta</button>
+                            <h5 class="m-3  font-weight-bold">O resgístrate con: </h5>
+                            <button type="submit" class="btn btn-danger btn-block "> <a class="text-light"
+                                    href="https://accounts.google.com/Login/signinchooser?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                    target="_blank" class="text-light"><i class="mx-2 fab fa-google-plus"></i>
+                                    Regístrate con Google</a></button>
+                            <button type="submit" class="btn btn-primary btn-block "><a class="text-light"
+                                    href="https://www.facebook.com/search/top/?q=login&opensearch=1" target="_blank"
+                                    class="text-light"><i class="mx-2 fab fa-facebook"></i>
+                                    Regístrate con Facebook</a></button>
+                        </form><br>
+                        <a href="login.html"> ¿Ya tiene una cuenta? <b>Ingresar</b></a>
+                    </form>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE -->
+    <div><img src="img/header/pampaarg222.jpg" class="w-100" alt="Imagen de La Pampa Argentina"></div>
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="sticky-top1">
+        <ol class="m-0 bg-dark breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active"><a href="comidaargentina.html">Comida Argentina</a></li>
+        </ol>
+    </nav>
+    <!-- FIN BREADCRUMB -->
+    <!-- INICIO CONTENIDO -->
+    <section class="container my-3 justify-content-center">
+        <article class="p-3">
+            <h3><u>Comidas Argentinas</u></h3>
+            <p>La gastronomía de Argentina combina influjos de la comida criolla (debido a los colonizadores
+                españoles), la nativa ―con su aporte crucial del maíz, la papa, la batata, la mandioca, el tomate,
+                el mate―, la africana subsahariana (como el consumo de achuras1​2​ y mondongo) —como
+                consecuencia de las personas llevadas como esclavas desde África al territorio que actualmente es
+                Argentina—, la española y la italiana (como consecuencia de las masivas inmigraciones de ese origen
+                a la Argentina a fines del siglo XIX y principios del XX).
+                Un factor determinante para su gastronomía es que Argentina resulta ser uno de los mayores
+                productores agrícolas del planeta, con una amplia disposición de alimentos de todo tipo a precios
+                relativamente bajos. Es un gran productor de trigo, poroto, choclo o maíz, carne (en especial
+                vacuna), leche y, desde los años 70, también gran productor de soja, aunque esta leguminosa no ha
+                logrado la aceptación popular.</p>
+            <hr>
+        </article>
+    </section>
+    <section class="card shadow container my-3">
+        <div class="row justify-content-center">
+            <!-- COLUMNA GRANDE -->
+            <div class="col-sm-12 col-md-9 col-lg-7 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">Día de la Milanesa: los secretos detrás del imprescindible plato de la cocina
+                        Argentina</h4>
+                    <p class="m-3">Frita o al horno, de carne, pollo, pescado o de soja, a la napolitana o caballo, la
+                        milanesa es
+                        una comida ícono por excelencia. Aunque su nombre remite a la ciudad italiana, se convirtió en
+                        un plato tradicional de la cocina argentina, paraguaya, uruguaya y boliviana. Las claves para
+                        prepararla y los mejores restaurantes para pedirla.</p>
+                    <div class="p-3"><img class="img-fluid" src="img/MILANESA.PNG" alt="Milanesa servida"></div>
+                    <p class="m-3"> Cada 3 de mayo las redes sociales son invadidas por fotos, historias y hashtags
+                        relativos a una
+                        efeméride que homenajea a un símbolo nacional: el Día de la Milanesa será el #DiadelaMilanesa,
+                        un trending topic que se compartirá en todo el territorio nacional para celebrar la penetración
+                        cultural de un tradicional plato argentino.
+                        A pesar de la actual explosión gastronómica, que ofrece nuevos y variados sabores a través de la
+                        comida e inauguración de restaurantes de comida exótica en la ciudad, la milanesa permanece en
+                        los menús como parte integral de la historia gastronómica argentina. "El argentino nunca se va a
+                        cansar de las milanesas, se puede cansar del sushi o de la cocina asiática, pero nunca de las
+                        milanesas", advirtió Martín Arrieta, el reconocido chef argentino.
+
+                        Su arraigo en las familias no tiene que ver con un comensal de paladar infantil, si no con uno
+                        que demanda calidad en el sabor. "Dejando de lado el asado, es uno de los platos rioplatenses
+                        por excelencia, como los ravioles o ñoquis con estofado", agregó.</p>
+                    <h5 class="m-3">Cómo preparar una auténtica milanesa argentina</h5>
+                    <div class="p-3"><img class="img-fluid" src="img/MILANESA2.PNG" alt="Imagen de Milanesa en mezcla">
+                    </div>
+                    <p class="m-3">Carne, leche, huevos, pan rallado y condimentos. "Uno de los aspectos que la
+                        convierte en única
+                        es la sencillez que la representa. Es una comida completa y rápida, que permite en minutos
+                        servir una buena comida", explicó German Sitz, considerado hoy entre los mejores siete
+                        chefs sub-35 de la Argentina.
+
+                        "Para mí la milanesa debe ser de nalga, por una cuestión de la composición del corte, muy magro
+                        sin nervios ni durezas", advirtió acerca del corte de carne para prepararlas.
+
+                        En un bol se deben mezclar los huevos con la leche, ajo y perejil, y salar esta preparación.
+                        Pasar cada corte de carne por la preparación y luego el pan rallado para finalmente freír las
+                        milanesas en una sartén con abundante aceite caliente.
+
+                        Si bien algunos recomiendan sazonar la carne con la sal, pimienta y orégano, para El Antojo, el
+                        bodegón en Villa del Parque que ganó el concurso que premiaba a la mejor milanesa de la ciudad,
+                        el secreto está en el marinado.
+
+                        Arrieta recomienda no sazonar la carne, sino condimentar a la inglesa y agregar sal y pimienta a
+                        la mezcla de huevo para un plato tradicional.</p>
+                    <div class="p-3"><img class="img-fluid" src="img/MILANESA3.PNG"
+                            alt="Imagen de Milanesa rebozándose"></div>
+                    <p class="m-3">El pan rallado industrial contiene levadura y no absorbe humedad, a diferencia del
+                        pan rallado
+                        proveniente de panadería. Por su parte, el rebozador garantiza a la milanesa terminada una
+                        mínima absorción de aceite por lo que los expertos recomiendan utilizar una proporción de 30%
+                        pan rallado y 70% rebozador.
+
+                        "El pan de panadería, rallado grueso y no en polvo es la mejor opción para las milanesas.
+                        Rebozar con panko, o pan rallado japones ha probado ser un recurso que beneficia su sabor y
+                        textura", aconsejó Arrieta.
+
+                        El de panadería tiene el sabor al pan original sin aditivos y el panko si bien le otorga
+                        textura, no es nada novedoso. Para las milanesas el chef recomienda mezclar un 70% de pan
+                        rallado de panadería con un 30% de panko, para una terminación más crujiente. E incluso sugiere
+                        agregar al rebozado hierbas aromáticas o algún ají picante molido.</p>
+                    <hr>
+                    <h5 class="m-3">Con papas fritas o con puré</h5>
+                    <div class="p-3"><img class="img-fluid" src="img/MILANESA4.PNG" alt="Imagen de Papas fritas"></div>
+                    <p class="m-3">
+                        "Para el acompañamiento, los argentinos eligen equitativamente puré de papas o papas fritas",
+                        advirtió Rafael Vargas, del Club de la Milanesa.
+
+                        Aunque algunos advierten que las papas fritas se llevan el primer lugar, otros aseguran que
+                        comparten el podio de los acompañamientos más populares con el famoso puré de papas.
+                    </p>
+                </article>
+            </div>
+            <!-- COLUMNA CHICA -->
+            <div class="col-sm-12 col-md-9 col-lg-3 p-3 my-3">
+                <article class="p-3 mb-5">
+                    <h4 class="m-3">El top 5 de los restaurantes con las mejores milanesas en Buenos Aires</h4>
+                    <ul>
+                        <li>
+                            <a href="https://elclubdelamilanesa.com/" target="_blank">
+                                <h5>El Club de la Milanesa</h5>
+                            </a>
+                            <p>"La milanesa 'inmortal' es la preferida de los clientes, viene con queso mozzarella,
+                                cheddar y hierbas sobre un colchón de papas fritas con queso, cebolla, panceta crocante,
+                                huevo revuelto, un toque de pimentón dulce y dos huevos fritos arriba", explicó Rafael
+                                Vargas, encargado del Club de la Milanesa.
+
+                                ¿Dónde? Av. Monroe 1402</p>
+                        </li>
+                        <li>
+                            <a href="https://m.facebook.com/elantojorestaurant/?locale2=es_LA" target="_blank">
+                                <h5>El Antojo</h5>
+                            </a>
+                            <p>Si de milanesas se trata, este bodegón es una muy buena opción. Ubicado en pleno corazón
+                                de Villa del Parque, es número uno en la zona. El Antojo se quedó con el premio "La
+                                Mejor Milanesa de Bodegón" por un concurso impulsado por el programa BA Capital
+                                Gastronómica y realizado por internet.
+
+                                ¿Dónde? Tinogasta 3174</p>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/dir//don+ignacio+milanesas+bs+as/@-30.6302768,-66.3838202,6z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcca5cb7d6a6c3:0x6c22e8262030fe3f!2m2!1d-58.415063!2d-34.6106569"
+                                target="_blank">
+                                <h5>Don Ignacio</h5>
+                            </a>
+                            <p>"Servimos 34 variedades, la más pedida es la 'Americana' que viene con una base de
+                                fileto, mozzarella y bacon gratinado y la a más exótica es la 'Vigilante': viene con
+                                queso cremoso y dulce de membrillo", advirtió Norberto Meza, dueño de Don
+                                Ignacio, el restaurante argentino en Almagro.
+
+                                ¿Dónde? Av. Rivadavia 3439</p>
+                        </li>
+                        <li>
+                            <a href="http://restaurantmanolo.com.ar/" target="_blank">
+                                <h5>Manolo</h5>
+                            </a>
+                            <p>
+                                Con más de 20 años de historia, se encuentra ubicado en el barrio de San Telmo, es un
+                                clásico de la zona y un restaurante con mucha historia. Parte de la cultura porteña se
+                                ve muy bien acompañada por la propuesta variada de una cocina con los mejores platos
+                                típicos.
+
+                                ¿Dónde? Bolívar 1299</p>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/dir//los+orientales+bs+as/@-30.6403694,-66.3948762,6z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcca5e89215f49:0xe8e3370b6c6008d4!2m2!1d-58.4221674!2d-34.6117423"
+                                target="_blank">
+                                <h5>Los Orientales</h5>
+                            </a>
+                            <p>En el barrio de Almagro se encuentra este diamante en bruto, una opción más que
+                                interesante gracias a sus buenos precios, comida casera, platos simples, cantidades
+                                abundantes y buena atención.
+
+                                ¿Dónde? Av. Rivadavia 3981</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- COMENTS -->
+    <div class="container col-sm-12 col-md-9 col-lg-7 p-3 my-3">
+        <section>
+            <form class="jumbotron p-4">
+                <div class="form-group">
+                    <label>Comentar</label>
+                    <textarea rows="4" placeholder="Deja tu comentario aqui!" class="form-control" type="text"
+                        required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit"><a class="text-light"
+                        href="error404.html">Enviar</a></button>
+            </form>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <article class="card p-2 shadow border-top-0 rounded px-5">
+                        <div class="row">
+                            <div class="d-flex">
+                                <img src="/img/Avatar Hombre 2.png" alt="avatarmujer3" width="50rem">
+                            </div>
+                            <div class="pt-3">
+                                <h5>Jonny García<span class="badge badge-success mx-2">Nuevo</span><span class="small">·
+                                        hace 10 minutos</span></h5>
+                            </div>
+
+                            <p class="small pt-1">Muy bueno! Probando cosas nuevas esta cuarentena. Salieron exquisitas,
+                                saludos desde España :)
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <p class="px-3"><i class="fas fa-thumbs-up"></i>0</p>
+                                <p><i class="fas fa-thumbs-down"></i>0</p>
+                                <p class="px-3"><i class="fas fa-ban"></i>Reportar</p>
+                                <button type="submit" class="btn btn-info btn-sm mb-1">Responder</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card p-2 shadow border-top-0 rounded px-5">
+                        <div class="row">
+                            <div class="d-flex">
+                                <img src="/img/Avatar Mujer 3.png" alt="avatarmujer3" width="50rem">
+                            </div>
+                            <div class="pt-3">
+                                <h5>Patricia Maidana<span class="small">· hace 50 minutos</span></h5>
+                            </div>
+
+                            <p class="small pt-1">Muy buena receta y facil de hacer! y El Club de la milanesa es un
+                                must!
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <p class="px-3"><i class="fas fa-thumbs-up"></i>0</p>
+                                <p><i class="fas fa-thumbs-down"></i>0</p>
+                                <p class="px-3"><i class="fas fa-ban"></i>Reportar</p>
+                                <button type="submit" class="btn btn-info btn-sm mb-1">Responder</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card p-2 shadow border-top-0 rounded px-5">
+                        <div class="row">
+                            <div class="d-flex">
+                                <img src="/img/Avatar Hombre 4.png" alt="avatar hombre 4" width="50rem">
+                            </div>
+                            <div class="pt-3">
+                                <h5>Tomás Gonzalez<span class="small">· hace 1 d.</span></h5>
+                            </div>
+
+                            <p class="small pt-1">No puedo parar de comer. De esta cuarentena salgo chef y redondo!!</p>
+                            <div class="d-flex align-items-center">
+                                <p class="px-3"><i class="fas fa-thumbs-up"></i>0</p>
+                                <p><i class="fas fa-thumbs-down"></i>0</p>
+                                <p class="px-3"><i class="fas fa-ban"></i>Reportar</p>
+                                <button type="submit" class="btn btn-info btn-sm mb-1">Responder</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card p-2 shadow border-top-0 rounded px-5">
+                        <div class="row">
+                            <div class="d-flex">
+                                <img src="/img/Avatar Mujer 2.png" alt="avatarmujer 2" width="50rem">
+                            </div>
+                            <div class="pt-3">
+                                <h5>Adriana Sutter<span class="small">· hace 1 mes</span></h5>
+                            </div>
+
+                            <p class="small pt-1">Las quemé jaja :( Lo mío no es la cocina, mejor me voy a los
+                                resturantes
+                                que recomendaron jajaja!</p>
+                            <div class="d-flex align-items-center">
+                                <p class="px-3"><i class="fas fa-thumbs-up"></i>0</p>
+                                <p><i class="fas fa-thumbs-down"></i>0</p>
+                                <p class="px-3"><i class="fas fa-ban"></i>Reportar</p>
+                                <button type="submit" class="btn btn-info btn-sm mb-1">Responder</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card p-2 shadow border-top-0 rounded px-5">
+                        <div class="row">
+                            <div class="d-flex">
+                                <img src="/img/Avatar Hombre.png" alt="avatarhombre" width="50rem">
+                            </div>
+                            <div class="pt-3">
+                                <h5>Pablo Farías<span class="small">· hace 25 minutos</span></h5>
+                            </div>
+
+                            <p class="small pt-1">Me mudé a Buenos Aires hace un mes y la verdad que las recomendaciones
+                                de
+                                restaurantes son excelentes!</p>
+                            <div class="d-flex align-items-center">
+                                <p class="px-3"><i class="fas fa-thumbs-up"></i>0</p>
+                                <p><i class="fas fa-thumbs-down"></i>0</p>
+                                <p class="px-3"><i class="fas fa-ban"></i>Reportar</p>
+                                <button type="submit" class="btn btn-info btn-sm mb-1">Responder</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-4 text-center pt-5">
+                <h5>Seguinos en:</h5>
+                <a href="error404.html" class="text-light"><i class="fab fa-pinterest-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-facebook-square fa-3x p-1"></i></a>
+                <a href="error404.html" class="text-light"><i class="fab fa-instagram-square fa-3x p-1"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center pt-1">
+                <img src="img/logo2.gif" width="150px" height="150px" alt="logo de Taberna Regional">
+                <p class="font-weight-bold"><b>Taberna Regional</b>
+                </p>
+                <hr>
+            </div>
+            <div class="container col-sm-12 col-md-4 text-center pt-5">
+                <ul class="pr-5">
+                    <h5>Subscribite a nuestra página web</h5>
+                    <form action="actions/email.php" method="POST">
+                        <div>
+                            <input class="my-2" type="email" placeholder="name@example.com" name="email" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="p-3">Si queres recibir las novedades, beneficios y descuentos, dejanos tu email</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center no-gutters">
+            <div class="col-sm-12">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
